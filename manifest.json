@@ -4,11 +4,10 @@
   "manifest_version": 3,
   "version": "0.1",
 
-  "permissions": ["activeTab"],
-  "content_scripts": [
-    {
-      "matches": ["https://studio.youtube.com/*"],
-      "js": ["content.js"]
-    }
-  ]
+  "permissions": ["scripting, activeTab"],
+  "background": {
+    "service_worker": "content.js"
+  },
+  "action":{
+  }
 }
