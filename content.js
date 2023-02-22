@@ -1,4 +1,3 @@
-
 chrome.runtime.onInstalled.addListener(() => {
   chrome.action.setBadgeText({
     text: "OFF",
@@ -6,7 +5,7 @@ chrome.runtime.onInstalled.addListener(() => {
 });
 
 
-const ytstudio = 'https://studio.youtube.com/channel/*'
+const ytstudio = 'https://studio.youtube.com/channel';
 
 
 // When the user clicks on the extension action
