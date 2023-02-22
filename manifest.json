@@ -4,7 +4,11 @@
   "manifest_version": 3,
   "version": "0.1",
 
-  "action": {
-    "default_popup": "popup.html"
-  }
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://studio.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
 }
