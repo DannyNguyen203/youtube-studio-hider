@@ -23,7 +23,7 @@ chrome.action.onClicked.addListener(async (tab) => {
       text: nextState,
     });
     
-    const elements = document.getElementsByClassName('.table-icon typical-icon  style-scope yta-video-snapshot');
+    const elements = document.getElementsByClassName('table-icon typical-icon  style-scope yta-video-snapshot');
 
 
     if (nextState === "ON") {
