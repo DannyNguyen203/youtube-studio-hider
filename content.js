@@ -25,9 +25,8 @@ chrome.action.onClicked.addListener(async (tab) => {
 
     if (nextState === "ON") {
       
-    chrome.tabs.executeScript(tab.id, {
-      
-    }, function() {
+    chrome.tabs.executeScript(tab.id, 
+      function() {
       // Manipulate elements here
       var elements = document.getElementsByClassName('table-icon typical-icon  style-scope yta-video-snapshot');
       for (let i = 0; i < elements.length; i++) {
@@ -40,8 +39,8 @@ chrome.action.onClicked.addListener(async (tab) => {
       
     } else if (nextState === "OFF") {
       
-    chrome.tabs.executeScript(tab.id, {
-    }, function() {
+    chrome.tabs.executeScript(tab.id,
+      function() {
       var elements = document.getElementsByClassName('table-icon typical-icon  style-scope yta-video-snapshot');
       // Manipulate elements here
       for (let i = 0; i < elements.length; i++) {
