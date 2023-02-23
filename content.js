@@ -11,6 +11,6 @@ function hideIcons() {
     elements[i].style.display = "none";
   }
   for(let i = 0; i < elements2.length; i++) {
-    elements2[i].style.cssText = 'display:none !important';
+    elements2[i].style.cssText = "display:none !important";
   }
 }
