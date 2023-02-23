@@ -6,5 +6,5 @@ for(let i = 0; i < elements.length; i++) {
   elements[i].style.display = "none";
 }
 for(let i = 0; i < elements2.length; i++) {
-  elements2[i].style.display = "none";
+  elements2[i].style.display = "none" !important;
 }
