@@ -5,9 +5,12 @@
   "version": "0.1",
 
   "permissions": ["scripting", "activeTab"],
-  "background": {
-    "service_worker": "content.js"
-  },
-  "action":{
-  }
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": [
+        "https://studio.youtube.com/channel/*",
+      ]
+    }
+  ]
 }
