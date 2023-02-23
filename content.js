@@ -5,7 +5,7 @@ const elements2 = document.getElementsByClassName('metric-trend narrow metric-ta
 for(let i = 0; i < elements.length; i++) {
   elements[i].style.display = "none";
 }
-for(let i = 0; i < elements.length; i++) {
+for(let i = 0; i < elements2.length; i++) {
   elements2[i].style.display = "none";
 }
 
