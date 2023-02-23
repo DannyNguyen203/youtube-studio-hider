@@ -9,7 +9,7 @@
     {
       "js": ["content.js"],
       "matches": [
-        "https://studio.youtube.com/channel/*",
+        "https://studio.youtube.com/channel/*"
       ]
     }
   ]
