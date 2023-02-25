@@ -1,6 +1,9 @@
-hideIcons();
-
-window.onload = hideIcons();
+document.addEventListener("DOMContentLoaded", function() {
+  // Check if we're on a YouTube Studio page
+  if (window.location.href.includes("studio.youtube.com")) {
+    hideIcons();
+  }
+});
 
 function hideIcons() {
   const elements = document.getElementsByClassName('table-icon typical-icon  style-scope yta-video-snapshot');
